@@ -1106,7 +1106,7 @@ def main():
             f'<div style="background:#0f0f0f;border:1px solid #1e1e1e;border-radius:8px;padding:12px 15px">'
             f'<div style="font-size:10px;color:#64748b;letter-spacing:.07em">NSE · LIVE</div>'
             f'<div style="font-size:22px;font-weight:700;color:#f1f5f9;margin-top:6px">'
-            f'₹{live.get("price","—"):,.2f}</div>'
+            f'₹{live.get("price", 0.0):,.2f}</div>'
             f'<div style="font-size:11px;color:#64748b;margin-top:4px">'
             f'Mkt cap: ₹{live.get("mktcap","—"):,} Cr<br>'
             f'Base rev: ₹{co["b_revenue"]:,.0f} Cr</div>'
